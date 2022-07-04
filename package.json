@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "jest --config ./jest.json",
+    "test:unit": "jest --config ./jest.json",
     "start:debug": "ts-node index.ts -- --debug --watch"
   },
   "build": "npm run prebuild && nest build -p tsconfig.build.json",

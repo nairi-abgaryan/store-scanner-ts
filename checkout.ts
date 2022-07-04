@@ -13,7 +13,7 @@ export class Checkout {
   }
   
   scan(productId: string): number {
-      if(!store.has(productId)) throw new Error('Product not found')
+      if(!store.has(productId)) throw new Error('error')
    
       if(!this.items.has(productId))
         this.items.set(productId, 0)

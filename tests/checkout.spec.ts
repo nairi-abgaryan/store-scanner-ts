@@ -1,5 +1,5 @@
 import {PriceRules} from '../priceRules';
-import {PriceDiscount} from '../discount';
+import {PriceDiscount} from '../priceDiscount';
 import {Checkout} from '../checkout';
 import {Bonus} from '../bonus';
 
@@ -68,6 +68,19 @@ describe('Checkout', function () {
       checkout.scan('atv')
       
       expect(checkout.total).toBe(547.5)
+    });
+  });
+  
+  describe('scan', function () {
+    it('should throw when store does not contain the item', function () {
+      const priceRules = new PriceRules()
+      let checkout = new Checkout(priceRules)
+      
+      try {
+        checkout.scan('unknown')
+      } catch (e) {
+        expect(e.message).toBe('error')
+      }
     });
   });
 });

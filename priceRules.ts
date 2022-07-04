@@ -1,5 +1,5 @@
-import {IBonusDiscount, IPriceDiscount, IPriceRules} from './interfaces';
-import {PriceDiscount} from './discount';
+import {IBonusDiscount, IPriceDiscount} from './interfaces';
+import {PriceDiscount} from './priceDiscount';
 import {Bonus} from './bonus';
 
 export class PriceRules {

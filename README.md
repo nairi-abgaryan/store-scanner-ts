@@ -1,46 +1,31 @@
-Node version
+Environment
+
 ```chef
-v14.15.4
+node -v14.15.4
 ```
-Npm version 
 ```chef
-v8.3.1
+npm - v8.3.1
 ```
 ## Installation
 
 ```bash
-git clone
+$ git clone https://github.com/nairi-abgaryan/store-scanner-ts.git
+
 $ npm install
 ```
 
 ## How to test
 
-Open the tests folder checkout.spec.test is testing different cases for checkout
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-```
-
-## Test
+_**checkout.spec.test contains all test cases**_
 
 ```bash
 # unit tests
 $ npm run test:unit
+```
 
-# e2e tests
-$ npm run test:e2e
+Classes
+```chef
+Bonus -> for giving bonuses after buying a specific number of products
+PriceDiscount -> for giving price discount after buying a specific number of products
+Checkout -> Contains the functional for counting total after applying discount strategy 
 ```
