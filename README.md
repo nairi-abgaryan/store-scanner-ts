@@ -32,3 +32,11 @@ Bonus -> for giving bonuses after buying a specific number of products
 PriceDiscount -> for giving price discount after buying a specific number of products
 Checkout -> Contains the functional for counting total after applying discount strategy
 ```
+
+Applying new price or bonus rules
+
+```js
+const priceRules = new PriceRules();
+priceRules.setBonusRules(new Bonus("atv", 2, 3));
+priceRules.setPriceRules(new PriceDiscount("ipd", 300, 4));
+```
