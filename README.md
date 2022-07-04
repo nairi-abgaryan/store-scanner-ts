@@ -3,9 +3,11 @@ Environment
 ```chef
 node -v14.15.4
 ```
+
 ```chef
 npm - v8.3.1
 ```
+
 ## Installation
 
 ```bash
@@ -24,8 +26,9 @@ $ npm run test:unit
 ```
 
 Classes
+
 ```chef
 Bonus -> for giving bonuses after buying a specific number of products
 PriceDiscount -> for giving price discount after buying a specific number of products
-Checkout -> Contains the functional for counting total after applying discount strategy 
+Checkout -> Contains the functional for counting total after applying discount strategy
 ```

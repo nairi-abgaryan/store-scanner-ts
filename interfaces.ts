@@ -1,23 +1,23 @@
 export interface IProduct {
-  id: string
-  name: string
-  price: number
+  id: string;
+  name: string;
+  price: number;
 }
 
 export interface IDiscount {
-  productId: string
-  appliedCount: number
+  productId: string;
+  appliedCount: number;
 }
 
-export interface IBonusDiscount extends IDiscount{
-  bonusCount: number
+export interface IBonusDiscount extends IDiscount {
+  bonusCount: number;
 }
 
 export interface IPriceDiscount extends IDiscount {
-  price: number
+  price: number;
 }
 
 export interface IPriceRules {
-  bonusRules: Map<string, IBonusDiscount>
-  priceRules: Map<string, IPriceDiscount>
+  bonusRules: Map<string, IBonusDiscount>;
+  priceRules: Map<string, IPriceDiscount>;
 }
