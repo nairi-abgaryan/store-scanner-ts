@@ -28,8 +28,7 @@ export class Checkout {
   applyPriceDiscount(productId: string): number {
     if (!this.priceRules.priceRules.has(productId)) return this.total;
 
-    let priceDiscount: IPriceDiscount =
-      this.priceRules.priceRules.get(productId);
+    let priceDiscount: IPriceDiscount = this.priceRules.priceRules.get(productId);
     let currentCount = this.items.get(productId);
     if (priceDiscount.appliedCount === this.items.get(productId)) {
       this.total -= (currentCount + 1) * store.get(productId).price;
