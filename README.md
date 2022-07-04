@@ -38,5 +38,6 @@ Applying new price or bonus rules
 ```js
 const priceRules = new PriceRules();
 priceRules.setBonusRules(new Bonus("atv", 1, 2)); // Each time will give 1 item after buying a 2
-priceRules.setPriceRules(new PriceDiscount("ipd", 499.99, 4)); // Will change item price to 499.99 after buyning 4 item 
+priceRules.setPriceRules(new PriceDiscount("ipd", 499.99, 4)); // Will change the item price to 499.99 after buyning 4 
+item 
 ```
